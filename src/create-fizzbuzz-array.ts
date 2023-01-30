@@ -1,3 +1,20 @@
+function createFizzBuzzArray(n: number): (string | number)[] {
+  let currentNum = 1;
+  const fizzBuzzArr: (string | number)[] = [];
+  while (currentNum <= n) {
+    currentNum % 3 === 0 && currentNum % 5 === 0
+      ? fizzBuzzArr.push("FizzBuzz")
+      : currentNum % 3 === 0
+      ? fizzBuzzArr.push("Fizz")
+      : currentNum % 5 === 0
+      ? fizzBuzzArr.push("Buzz")
+      : fizzBuzzArr.push(currentNum);
+    currentNum++;
+  }
+  return fizzBuzzArr;
+}
+export default createFizzBuzzArray;
+
 /*
 PSEUDOCODE
 ===================
@@ -31,20 +48,3 @@ ENDWHILE.
 return FIZZBUZZ_ARRAY
 
 =================== */
-
-function createFizzBuzzArray(n: number): (string | number)[] {
-  let currentNum = 1;
-  const fizzBuzzArr: (string | number)[] = [];
-  while (currentNum <= n) {
-    currentNum % 3 === 0 && currentNum % 5 === 0
-      ? fizzBuzzArr.push("FizzBuzz")
-      : currentNum % 3 === 0
-      ? fizzBuzzArr.push("Fizz")
-      : currentNum % 5 === 0
-      ? fizzBuzzArr.push("Buzz")
-      : fizzBuzzArr.push(currentNum);
-    currentNum++;
-  }
-  return fizzBuzzArr;
-}
-export default createFizzBuzzArray;

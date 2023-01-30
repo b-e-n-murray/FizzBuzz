@@ -1,5 +1,12 @@
 import createFizzBuzzArray from "./create-fizzbuzz-array";
 
+function createFizzBuzzString(n: number) {
+  let fizzBuzzString = createFizzBuzzArray(n).join(", ");
+  return fizzBuzzString;
+}
+
+export default createFizzBuzzString;
+
 /*
 PSEUDOCODE
 ===================
@@ -16,4 +23,3 @@ Declare a new var, FIZZBUZZ_STRING (of type string), and set it to be
 
  return FIZZBUZZ_STRING
 */
-
