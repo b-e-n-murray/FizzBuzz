@@ -6,7 +6,7 @@ PARAMS:
 N, (of type number), which denotes the final number of the sequence
 OUTPUTS:
 FIZZBUZZ_ARRAY, (of type string/number array),
- representing a sequence of incrementing numbers from 1 to N,
+ a sequence of incrementing numbers from 1 to N,
  where all numbers that meet one of three conditions are substituted for specific strings
 ===================
 Declare new var, CURRENT_NUM, (of type number), to act as an incrementor of the following 'while' loop, and set it to 1

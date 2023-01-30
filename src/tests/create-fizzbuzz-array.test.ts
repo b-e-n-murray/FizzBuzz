@@ -1,4 +1,4 @@
-import createFizzBuzzSequence from "./create-fizzbuzz-array";
+import createFizzBuzzSequence from "../create-fizzbuzz-array";
 
 test("length of array matches input, n", () => {
   expect(createFizzBuzzSequence(15).length).toEqual(15);
